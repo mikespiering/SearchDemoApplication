@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+  layout:decorator="layout">
+  <body>
+    <div layout:fragment="content">
+		<div th:if="${patent}">
+			<h1 th:text="${patent.title}">The Best PaaS</h1>
+			Document Number: <span th:text="${patent.docNumber}">PCF</span>
+			<br />
+			<span th:text="${patent.kind}">A1</span>
+			<br />
+			<h2>Summary</h2>
+			<span th:text="${patent.summary}">The PaaS Story</span>
+		</div>
+		<input type="button" value="Back" onclick="window.history.back()" /> 
+	</div>
+  </body>
+</html>

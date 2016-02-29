@@ -1,0 +1,9 @@
+/Users/mspiering/code/usptodemo/uspto-sample-app/datagov-crawler/src/main/java/io/pivotal/datagov/component/PatentDataPoller.java
+/Users/mspiering/code/usptodemo/uspto-sample-app/datagov-crawler/src/main/java/io/pivotal/datagov/model/Patent.java
+/Users/mspiering/code/usptodemo/uspto-sample-app/datagov-crawler/src/main/java/io/pivotal/datagov/component/ServiceProperties.java
+/Users/mspiering/code/usptodemo/uspto-sample-app/datagov-crawler/src/main/java/io/pivotal/datagov/component/PatentDataFilePoller.java
+/Users/mspiering/code/usptodemo/uspto-sample-app/datagov-crawler/src/main/java/io/pivotal/datagov/component/PatentDataUpdater.java
+/Users/mspiering/code/usptodemo/uspto-sample-app/datagov-crawler/src/main/java/io/pivotal/datagov/DataGovCrawlerApplication.java
+/Users/mspiering/code/usptodemo/uspto-sample-app/datagov-crawler/src/main/java/io/pivotal/datagov/model/PatentDataFile.java
+/Users/mspiering/code/usptodemo/uspto-sample-app/datagov-crawler/src/main/java/io/pivotal/datagov/services/PatentDataFileRepository.java
+/Users/mspiering/code/usptodemo/uspto-sample-app/datagov-crawler/src/main/java/io/pivotal/datagov/services/PatentRepository.java

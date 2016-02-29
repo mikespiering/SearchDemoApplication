@@ -1,0 +1,10 @@
+io/pivotal/datagov/component/PatentDataUpdater$1.class
+io/pivotal/datagov/services/PatentRepository.class
+io/pivotal/datagov/component/PatentDataPoller.class
+io/pivotal/datagov/model/Patent.class
+io/pivotal/datagov/services/PatentDataFileRepository.class
+io/pivotal/datagov/component/PatentDataFilePoller.class
+io/pivotal/datagov/DataGovCrawlerApplication.class
+io/pivotal/datagov/component/ServiceProperties.class
+io/pivotal/datagov/model/PatentDataFile.class
+io/pivotal/datagov/component/PatentDataUpdater.class

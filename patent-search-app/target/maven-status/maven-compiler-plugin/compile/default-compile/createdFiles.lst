@@ -1,0 +1,5 @@
+io/pivotal/demo/patent/WebUiApplication.class
+io/pivotal/demo/patent/internal/PatentRepository.class
+io/pivotal/demo/patent/internal/SearchCriteria.class
+io/pivotal/demo/patent/internal/Patent.class
+io/pivotal/demo/patent/controller/PatentController.class

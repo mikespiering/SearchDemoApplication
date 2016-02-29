@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+  <head>
+    <title>NOAA Search Demo</title>
+   <!--  <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" href="../../css/bootstrap.min.css"/> -->
+    <link rel="stylesheet" href="../../css/screen.css" th:href="@{/css/screen.css}" />
+    <link rel="stylesheet" href="../../css/patent.css" th:href="@{/css/patent.css}" />
+    <style type="text/css">
+    fieldset { border:1px solid #336699;
+    border-radius: 5px; 
+    padding: 0.2em 1.5em;
+    width: 70%;
+    }
+    legend {
+  padding: 0.2em 0.5em;
+  border:1px solid #336699;
+  color: #336699;
+  font-size:90%;
+  text-align:left;
+  border-radius: 5px;
+  }
+    </style>
+  </head>
+  <body class="tundra">
+    <div id="page" class="container">
+		<div id="header">
+			<div id="logo">
+					<a href="#" th:href="@{/}"> <img
+						src="../../images/uspto-logo.png"
+						th:src="@{/images/uspto-logo.png}"
+						alt="Sample USPTO application" />
+					</a>
+				
+					<img class="right" src="../../image/demo.png"
+							th:src="@{/images/demo.png}" height="60" width="60"
+							alt="A demo application" />
+				
+			</div>
+		</div>
+		<div id="menu" style="background-color:green">
+			<ul>
+				<li><a href="#">News and features</a></li>
+				<li class="nav_separator"></li>
+				<li><a href="#">Our Work</a></li>
+				<li class="nav_separator"></li>
+				<li><a href="#">About Our Agency</a></li>
+			</ul>
+		</div>
+
+		
+		<div id="middle">
+			<div id="leftSec">
+				<ul class="dynamicText">
+					<li><a href="http://www.noaa.gov/weather"> <span class="left"> <span class="h4">Weather</span></span> 
+						 <img class="right" src="../../images/weather.svg" />
+					</a></li>
+					<li><a href="http://www.noaa.gov/#"> <span class="left"> <span class="h4">Climate</span> 
+						</span> <img class="right" src="../../images/climate.svg"/>
+					</a></li>
+					<li><a href="http://www.noaa.gov/#"> <span class="left"> <span
+								class="h4">Oceans and Coasts</span> 
+						</span> <img class="right" src="../../images/oceanscoasts.svg"/>
+					</a></li>
+					<li><a href="http://www.noaa.gov/#"> <span class="left"> <span
+								class="h4">Fisheries</span>
+						</span> <img class="right" src="../../images/fisheries.svg"/>
+					</a></li>
+					<li><a href="#"> <span class="left"> <span
+								class="h4">Satellites</span> 
+						</span> <img class="right" src="../../images/satellites.svg"/>
+					</a></li>
+					<li><a
+						href="http://www.noaa.gov/#"> <span
+							class="left"> <span class="h4">Research</span> </span>  
+							<img class="right" src="../../images/research.svg" />
+					</a></li>
+					<li><a href="http://www.noaa.gov/#"> <span class="left"> <span class="h4">Marine and Aviation</span> </span>
+					 <img class="right" src="../../images/marineaviation.svg"/>
+					</a></li>
+					<li><a href="http://www.noaa.gov/#"> <span
+							class="left"> <span class="h4">Charting Status</span> 
+						</span> <img class="right" src="../../images/charting.svg"/>
+					</a></li>
+					<li><a href="http://www.noaa.gov/#"> <span
+							class="left"> <span class="h4">Sanctuaries</span> 
+						</span> <img class="right" src="../../images/sanctuaries.svg"/>
+					</a></li>
+				</ul>
+			</div>
+			<div id="midSec">
+				<div id="main" layout:fragment="content">
+
+					BODY PAGE GOES HERE!
+
+				</div>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

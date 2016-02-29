@@ -1,0 +1,3 @@
+INSERT INTO patent (doc_number, title, kind, summary, date_published) VALUES ('USP-001', 'Mobile Device', 'K1', 'Mobile device solution to improve mobile devices', parsedatetime('04-11-2014 20:53:52.69', 'dd-MM-yyyy hh:mm:ss.SS'));
+INSERT INTO patent (doc_number, title, kind, summary, date_published) VALUES ('USP-002', 'Platform as a Service', 'K2', 'Solutions and concepts that make an enterprise PaaS', parsedatetime('04-11-2014 20:54:52.69', 'dd-MM-yyyy hh:mm:ss.SS'));
+INSERT INTO patent (doc_number, title, kind, summary, date_published) VALUES ('USP-003', 'Big Data Suite', 'K2', 'Making sense of big data away from the EDW model.', parsedatetime('04-11-2014 20:54:52.69', 'dd-MM-yyyy hh:mm:ss.SS'));

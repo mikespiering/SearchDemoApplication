@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+  layout:decorator="layout">
+  <body>
+    <div layout:fragment="content">
+      <h1>Sample Search Application</h1>
+      <p>This sample demonstrates how to use Spring MVC and Spring Web Flow together with Thymeleaf and Tiles.</p>
+	  <hr />
+		
+	  <p>The key features illustrated in this sample include:</p>
+	  <ul>
+			<li>Sample of an Spring-based Application in CloudFoundry</li>
+		    <li>Self-Healing of Applications (1 of the 4 HA features of CF)</li>
+		    <li>Zero Downtime (Blue-Green) Deployment.</li>
+	  </ul>
+	  <fieldset>
+  		<legend>Environment Information:</legend>
+  		 <table class="vcapInfo">
+  		   <tr>
+  		     <th>Current Server Time:</th>
+  		     <td th:text="${serverTime}">now</td>
+  		   </tr>
+  		   <tr>
+  		     <th>Application Port:</th>
+  		     <td th:text="${port}"></td>
+  		   </tr>
+  		   <tr>
+  		     <th>Instance ID:</th>
+  		     <td th:text="${vcapApplication['instance_id']}"></td>
+  		   </tr>
+  		   <tr>
+  		     <th>Instance Index:</th>
+  		     <td th:text="${vcapApplication['instance_index']}"></td>
+  		   </tr>
+  		   <tr>
+  		     <th>Application Start Time:</th>
+  		     <td th:text="${vcapApplication['started_at']}"></td>
+  		   </tr>
+  		   <tr>
+  		     <th>Services:</th>
+  		     <td> 
+  		       <ul th:each="service : ${vcapServices}">
+  		         <li th:text="${service}"></li>
+  		       </ul>
+  		     </td>
+  		   </tr>
+  		 </table>  		 
+ 	  </fieldset>
+	  <p>
+	    <table class="appControls">
+	      <tr>
+	        <td class="control">
+	          <a class="button" th:href="@{/noaa}">Search </a>
+        	</td>
+            <td class="alert">
+              <a href="kill" class="killme">Kill Application</a>
+            </td>
+	      </tr>
+	    </table>
+      </p>
+    </div>
+  </body>
+</html>

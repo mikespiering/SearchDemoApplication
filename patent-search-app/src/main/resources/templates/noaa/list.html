@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+  layout:decorator="layout">
+  <body>
+    <div layout:fragment="content">
+	   <h1>Search </h1>
+	   
+	   <div>
+         <p>
+           <a id="changeSearchLink" href="#" class="button"
+              th:href="@{/noaa(searchString=${searchCriteria.searchString},pageSize=${searchCriteria.pageSize})}">Change Search</a>
+         </p>
+       </div>
+       <hr/>
+       <div>
+	       <div th:if="${patentList}">
+	  
+			   <table class="summary">
+			       <thead>
+			           <tr>
+			               <th>Id</th>
+			               <th>Doc Number</th>
+			               <th>Title</th>
+			               <th>Date Published</th>
+			               <th>Action</th>
+			           </tr>
+			       </thead>
+			       <tbody>
+			           <tr th:each="patent : ${patentList}">
+			               <td th:text="${patent.id}">1</td>
+			               <td th:text="${patent.docNumber}">0002</td>
+			               <td th:text="${patent.title}">PCF</td>
+			               <td th:text="${patent.publishedDate}">Now</td>
+			               <td>
+			                 <a href="#" class="button" th:href="@{'/noaa/' + ${patent.id}}">View</a>
+			               </td>
+			           </tr>
+			           <tr th:unless="${patentList}">
+			               <td colspan="5">Nothing found</td>
+			           </tr>
+			       </tbody>
+			   </table>
+			   
+			   <div class="buttonGroup">
+			        <div>
+			            <div th:if="${searchCriteria.page > 0}">
+			                <a id="prevResultsLink" href="#" class="button"
+			                   th:href="@{/noaa/search(searchString=${searchCriteria.searchString},pageSize=${searchCriteria.pageSize},page=${searchCriteria.page - 1})}">Previous Results</a>
+			             
+			            </div>
+			        </div>
+			        <div>
+			            <div th:if="${patentList} and ${patentList.size() == searchCriteria.pageSize}">
+			                <a id="moreResultsLink" href="#" class="button"
+			                   th:href="@{/noaa/search(searchString=${searchCriteria.searchString},pageSize=${searchCriteria.pageSize},page=${searchCriteria.page + 1})}">More Results</a>
+			                
+			            </div>      
+			        </div>
+			    </div>
+			   
+		    </div>
+	    </div>
+    </div>
+  </body>
+</html>

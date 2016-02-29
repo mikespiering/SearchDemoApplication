@@ -1,0 +1,14 @@
+---
+buildpack: https://github.com/cloudfoundry/java-buildpack.git
+services:
+- patent-data-service
+
+applications:
+- name: datagov-crawler
+  memory: 2GB
+  path: datagov-crawler/target/crawler-0.0.1-SNAPSHOT.jar
+  no-route: true
+- name: uspto-patent-search
+  memory: 1GB
+  instances: 1
+  path: patent-search-app/target/patent-search-0.0.1-SNAPSHOT.war

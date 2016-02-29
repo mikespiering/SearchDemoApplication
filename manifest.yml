@@ -1,0 +1,10 @@
+---
+buildpack: https://github.com/cloudfoundry/java-buildpack.git
+services:
+- patent-data-service
+
+applications:
+- name: NOAA_search_demo_ldata
+  memory: 1GB
+  instances: 1
+  path: patent-search-app/target/patent-search-0.0.1-SNAPSHOT.war
