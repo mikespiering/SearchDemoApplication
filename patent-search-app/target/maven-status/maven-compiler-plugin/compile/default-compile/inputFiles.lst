@@ -1,5 +1,5 @@
-/Users/mspiering/code/usptodemo/uspto-sample-app/patent-search-app/src/main/java/io/pivotal/demo/patent/internal/PatentRepository.java
-/Users/mspiering/code/usptodemo/uspto-sample-app/patent-search-app/src/main/java/io/pivotal/demo/patent/WebUiApplication.java
-/Users/mspiering/code/usptodemo/uspto-sample-app/patent-search-app/src/main/java/io/pivotal/demo/patent/internal/Patent.java
-/Users/mspiering/code/usptodemo/uspto-sample-app/patent-search-app/src/main/java/io/pivotal/demo/patent/internal/SearchCriteria.java
-/Users/mspiering/code/usptodemo/uspto-sample-app/patent-search-app/src/main/java/io/pivotal/demo/patent/controller/PatentController.java
+/Users/mspiering/code/SearchDemoApplication/SearchDemoApplication/patent-search-app/src/main/java/io/pivotal/demo/patent/WebUiApplication.java
+/Users/mspiering/code/SearchDemoApplication/SearchDemoApplication/patent-search-app/src/main/java/io/pivotal/demo/patent/controller/PatentController.java
+/Users/mspiering/code/SearchDemoApplication/SearchDemoApplication/patent-search-app/src/main/java/io/pivotal/demo/patent/internal/PatentRepository.java
+/Users/mspiering/code/SearchDemoApplication/SearchDemoApplication/patent-search-app/src/main/java/io/pivotal/demo/patent/internal/Patent.java
+/Users/mspiering/code/SearchDemoApplication/SearchDemoApplication/patent-search-app/src/main/java/io/pivotal/demo/patent/internal/SearchCriteria.java

@@ -1,8 +1,9 @@
 ---
 applications:
-- name: uspto-patent-search
-  memory: 1GB
+- name: noaa_demo
+  memory: 1024M
   instances: 1
   path: target/patent-search-0.0.1-SNAPSHOT.war
   buildpack: https://github.com/albertoaflores/java-buildpack
-
+  host: noaa_demo
+  domain: cfapps.pez.pivotal.io
