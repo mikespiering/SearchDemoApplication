@@ -1,8 +1,0 @@
----
-applications:
-- name: uspto-patent-search
-  memory: 1GB
-  instances: 1
-  path: target/patent-search-0.0.1-SNAPSHOT.war
-  buildpack: https://github.com/albertoaflores/java-buildpack
-
